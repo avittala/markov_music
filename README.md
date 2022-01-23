@@ -7,13 +7,14 @@ This project consists of two parts:
 # The Music class
 Here's a quick look at sample usage of this class:
 ```
-m = Music(120)
+m = Music()
 ```
-This generates a Music object with a tempo of 120 bpm. 
-You can set a time signature (beats per measure, 4 = 4/4 time) and key signature (0 = C) by directly accessing the Music object.
+This generates a Music object. 
+You can set a tempo (beats per minute), time signature (beats per measure, 4 = 4/4 time) and key signature (0 = C) by directly accessing the Music object.
 ```
-m.ts = 4
-m.key = 0
+m.tempo = 120 # 120 beats per minute
+m.ts = 4 # 4 beats per measure
+m.key = 0 # key of C
 ```
 To add notes, use the `add_notes()` function. Remember that the `m.base_pitch` (default value is 60 or C5) is automatically added to any pitch.
 ```
