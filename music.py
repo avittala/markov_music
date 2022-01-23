@@ -29,11 +29,11 @@ class Music():
 	instr_dict: dict
 		maps instrument name to tuple of bank number and ID in sf2 file
 	"""
-	# Initialize with tempo in BPM
-	def __init__(self, tempo, base_pitch=60):
-		self.tempo = tempo
-		self.timestep = 60/tempo # seconds per beat
-		self.base_pitch = base_pitch # MIDI number to add to any pitch
+	# Initialize a music object
+	def __init__(self):
+		self.tempo = 120
+		self.timestep = 60/self.tempo # seconds per beat
+		self.base_pitch = 60 # MIDI number to add to any pitch
 		self.num_seq = 0 # number of note sequences, maximum is 16!
 		self.ts = 4 # time signature
 		self.notes = [] # list of notes as tuples of (sequence number, pitch, beat on, beat off)
