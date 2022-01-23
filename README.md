@@ -26,7 +26,7 @@ m.compile()
 m.write('out.midi')
 m.play()
 ```
-Compiling the Music object converts any note sequences into the list of play and sleep times we need for a MIDI file. Next, the write function converts this list into a correctly formatted MIDI file. You can open this file in any MIDI player. Alternatively, if you install [fluidsynth](https://www.fluidsynth.org/) and [pyfluidsynth](https://github.com/nwhitehead/pyfluidsynth), you can play the MIDI file directly from your computer!
+Compiling the Music object converts any note sequences into the list of play and sleep times we need for a MIDI file. Next, the write function converts this list into a correctly formatted MIDI file. You can open this file in any MIDI player. Alternatively, if you install [fluidsynth](https://www.fluidsynth.org/) and [pyfluidsynth](https://github.com/nwhitehead/pyfluidsynth), you can play the MIDI file directly from your computer! I pulled the sound font file Essential Keys-sfzBanks-v9.6.sf2 from [here](https://sites.google.com/site/soundfonts4u/)
 
 # Generating music with Markov processes
 The `markov_music.py` file include both all the helper functions needed to automatically generate music along with sample code to showcase usage. The process typically involves three parts:
